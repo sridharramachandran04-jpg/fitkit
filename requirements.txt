@@ -1,0 +1,14 @@
+# FitKit — tested, compatible dependency versions
+# IMPORTANT: mediapipe>=1.0 removed the legacy `mp.solutions.*` API this project
+# uses everywhere (mp.solutions.pose, mp.solutions.drawing_utils, etc.), and
+# newer opencv/streamlit releases pull in a numpy/protobuf combo that conflicts
+# with mediapipe 0.10.x. The versions below are verified to install and run
+# together cleanly.
+
+streamlit==1.38.0
+opencv-python-headless==4.10.0.84
+mediapipe==0.10.21
+numpy==1.26.4
+pillow
+pyttsx3
+google-genai
